@@ -81,7 +81,7 @@ jQuery.fn.pagiuery = function pagiuery(customOptions) {
   ) => {
     const buttonContainer = jQuery('<div class="btn-container"></div>');
     buttonMore = jQuery(
-      `<button class="show-more__btn ${options.more.class}">${options.more.text}&nbsp;(<span class="count">${count}</span>)</button>`,
+      `<button class="show-more__btn ${options.more.class}">${options.more.text}&nbsp;<span class="count">(${count})</span></button>`,
     );
     if (items.length <= options[viewport].default) {
       buttonMore.hide();
