@@ -1,0 +1,33 @@
+{
+  "name": "pagiuery",
+  "version": "1.0.0",
+  "description": "jQuery content pagination library.",
+  "devDependencies": {
+    "@types/jquery": "^3.3.38",
+    "microbundle": "^0.12.0",
+    "prettier": "^2.0.5"
+  },
+  "scripts": {
+    "build": "microbundle --compress --no-sourcemap -i src/pagiuery.ts  -o dist/pagiuery.js",
+    "dev": "microbundle watch",
+    "format": "prettier --write src/pagiuery.ts",
+    "publish": "npm run format && npm run build && git commit --allow-empty -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish"
+  },
+  "repository": "skippednote/pagiuery",
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all",
+    "useTabs": false
+  },
+  "keywords": [
+    "jquery",
+    "showmore",
+    "pagiuery"
+  ],
+  "files": [
+    "dist",
+    "src"
+  ],
+  "author": "Bassam Ismail <skippednote@gmail.com>",
+  "license": "MIT"
+}
