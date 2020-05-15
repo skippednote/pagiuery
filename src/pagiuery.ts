@@ -81,7 +81,7 @@ jQuery.fn.pagiuery = function pagiuery(customOptions) {
   ) => {
     const buttonContainer = jQuery('<div class="btn-container"></div>');
     buttonMore = jQuery(
-      `<button class="show-more__btn ${options.more.class}">${options.more.text}&nbsp;<span class="count">(${count})</span></button>`,
+      `<button class="show-more__btn ${options.more.class}">${options.more.text}&nbsp;<span class="count-wrapper">(<span class="count">${count}</span>)</span></button>`,
     );
     if (items.length <= options[viewport].default) {
       buttonMore.hide();
@@ -91,7 +91,7 @@ jQuery.fn.pagiuery = function pagiuery(customOptions) {
     ).hide();
     buttonMore.click(showMoreItems);
     if (!options.count) {
-      buttonMore.find('.count').hide();
+      buttonMore.find('.count-wrapper').hide();
     }
     buttonLess.click(showLessItems);
     buttonContainer.append(buttonMore);
