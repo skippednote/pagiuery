@@ -1,6 +1,6 @@
 {
   "name": "pagiuery",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "jQuery content pagination library.",
   "devDependencies": {
     "@types/jquery": "^3.3.38",
@@ -29,5 +29,6 @@
     "src"
   ],
   "author": "Bassam Ismail <skippednote@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "main": "dist/pagiuery.js"
 }
